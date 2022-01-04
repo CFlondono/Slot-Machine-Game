@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Slot Machine</h1></header>
+    <main id="container">
+        <section id="gameboard">
+            <!-- row 1 -->
+            <div id="square1" class="cell" onclick="markSquare('square1')"></div>
+            <div id="square2" class="cell" onclick="markSquare('square2')"></div>
+            <div id="square3" class="cell" onclick="markSquare('square3')"></div>
+        </section>
+        <section>
+            <h1 id="game-messages">Let's play...</h1>
+            <div class="ui-wrapper">
+                <button>Start </button>
+                <button id="reset">stop</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
