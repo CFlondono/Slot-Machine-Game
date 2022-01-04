@@ -36,3 +36,4 @@ As a user I would like to see
 * As a user I would like to be able to press the "stop" buton to stop the rotation
 * As a user I would like to see three symbols chosen at random when I press the stop button.
 
+![wireframe](Wireframe_Slot_Machine.png)
