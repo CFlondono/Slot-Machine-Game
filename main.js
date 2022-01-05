@@ -1,12 +1,13 @@
 console.log("js")
 let arraySymbol = ["🍋", "🔔","🍒"]
 let squaresId = ["square1","square2","square3"]
-
+let symbolStatus = []
 //three squares lined up together with a symbol on each one
 document.getElementById('square1').innerHTML = arraySymbol[0];
 document.getElementById('square2').innerHTML = arraySymbol[1];
 document.getElementById('square3').innerHTML = arraySymbol[2];
-document.getElementById('start').addEventListener('click', runSlots(arraySymbol, squaresId))
+//runSlots(arraySymbol,squaresId)
+document.getElementById('start').addEventListener('click',runSlots);
 //runSlots(arraySymbol,squaresId)
 // const symbol = selectSymbol(arraySymbol)
 // console.log(symbol)
@@ -15,29 +16,40 @@ document.getElementById('start').addEventListener('click', runSlots(arraySymbol,
 // displaySymbols(randomSymbols,squaresId)
 
 //This function selects a random symbol from the reel array
-
 function selectSymbol(arraySymbol){
     const randomSymbol = Math.floor(Math.random()*arraySymbol.length)
     return arraySymbol[randomSymbol]
+// it returns a random element from the array
 }
 //A function to create a new array with the random symbols
-function generateSlots(arraySymbol){
-    const slotsRandom = []
+function generateSlots(){
+    symbolStatus = []
     for(let i=0; i<arraySymbol.length; i++){
-        slotsRandom.push(selectSymbol(arraySymbol))
+        symbolStatus.push(selectSymbol(arraySymbol))
     }
-    return slotsRandom
+    return symbolStatus
+//it neturns a new array with new random elements 
 }
-// a function that update the squares in the html
-function displaySymbols(slotsArray,idArray){
-    for (let i = 0; i < idArray.length; i++){
-        const newSymbol = document.getElementById(idArray[i])
-        newSymbol.innerHTML = slotsArray[i]
+// a function that update the squares in the html. The atributes that I will pass are the array with the symbols and the array with the square ids (where I want the elements to be displayed)
+function displaySymbols(){
+    for (let i = 0; i < squaresId.length; i++){
+        const newSymbol = document.getElementById(squaresId[i])
+        newSymbol.innerHTML = symbolStatus[i]
     }  
 }
+// Three symbols selected at random (when I press the "lever" button - addEventListener clik will call this function)
 // A function that calls the random array and displays the symbols on the squares
-function runSlots(symbolArray,idSquares){
-    const randomSlots = generateSlots(symbolArray)
-    displaySymbols(randomSlots,idSquares)
+function runSlots(){
+    const randomSlots = generateSlots()
+    console.log(randomSlots)
+    displaySymbols()
+    const message = document.getElementById("game-messages")
+    if (symbolStatus[0] === symbolStatus[1] && symbolStatus[1] === symbolStatus[2]){
+        message.innerHTML = "You won!!"
+    }else message.innerHTML = "Try again!!"
 }
+
+//An anounce that I have won if the the three symbols showing on the squares are the same
+
+
 
