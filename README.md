@@ -25,7 +25,7 @@ And he bar emerged from the idea that it looked like a bar of gum! (taken from :
 # user stories
 - MVP
 As a user I would like to see
-* three squares lined up together with a symbol on eachone
+* three squares lined up together with a symbol on each one
 * a "lever" button that makes the reels rotate at randon
 * three symbols selected at random when I press the "lever" button
 * an anounce that I have won if the the three symbols are the same
