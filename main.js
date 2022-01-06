@@ -1,5 +1,5 @@
 console.log("js")
-let arraySymbol = ["🍋", "🔔","🍒"]
+let arraySymbol = ["🍋", "🔔","🍒","🍊"]
 let squaresId = ["square1","square2","square3"]
 let symbolStatus = []
 //three squares lined up together with a symbol on each one
@@ -7,7 +7,7 @@ document.getElementById('square1').innerHTML = arraySymbol[0];
 document.getElementById('square2').innerHTML = arraySymbol[1];
 document.getElementById('square3').innerHTML = arraySymbol[2];
 //runSlots(arraySymbol,squaresId)
-document.getElementById('start').addEventListener('click',runSlots);
+document.getElementById('start').addEventListener('click',starTimer);
 //runSlots(arraySymbol,squaresId)
 // const symbol = selectSymbol(arraySymbol)
 // console.log(symbol)
@@ -29,6 +29,7 @@ function generateSlots(){
     }
     return symbolStatus
 //it neturns a new array with new random elements 
+// symbolStatus is the array with the random elements
 }
 // a function that update the squares in the html. The atributes that I will pass are the array with the symbols and the array with the square ids (where I want the elements to be displayed)
 function displaySymbols(){
@@ -52,4 +53,16 @@ function runSlots(){
 //An anounce that I have won if the the three symbols showing on the squares are the same
 
 
-
+function starTimer(){
+    let count = 0
+    let animationStart = setInterval(()=>{
+        count ++
+        for(let i = 0; i < 10; i++){
+            runSlots()
+        }
+        if (count>=10){
+            clearInterval(animationStart)
+        }    
+    },100)    
+}
+starTimer()
