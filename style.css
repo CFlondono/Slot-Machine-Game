@@ -23,9 +23,8 @@ h2{
 #gameboard{
     display: flex;
     margin: auto;
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
     background-color:rgb(6, 63, 61);
-    /* flex-wrap will force additional cells to a new line after any squares on the first row exceed 450px */
     width: 250px;
     /* the width of the gameboard */
     justify-content: center;
