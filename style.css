@@ -7,12 +7,13 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     margin-top: 10px;
-    background-color: rgba(37, 23, 56, 0.651);
+    background-color: rgba(9, 5, 29, 0.651);
 }
 
 h1{
-    font-family:sans-serif;
+    font-family:monospace;
     text-align: center;
+    color: seashell;
 }
 h2{
     font-family:sans-serif;
