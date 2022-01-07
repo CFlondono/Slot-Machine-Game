@@ -14,14 +14,12 @@ h1{
     font-family:sans-serif;
     text-align: center;
 }
-#container{
-    background-color:rgb(218, 201, 186);
-    width: fit-content;
-    margin: auto;
-    margin-top: 70px;
-    border-color: rgba(5, 5, 5, 0.932);
-    border-width: 10px;
+h2{
+    font-family:sans-serif;
+    text-align: center;
+    color:seashell;
 }
+
 #gameboard{
     display: flex;
     margin: auto;
@@ -33,16 +31,17 @@ h1{
     justify-content: center;
     margin-top: 303px;
 }
+#container{
+    background-color:rgb(46, 28, 12);
+    width: fit-content;
+    margin: auto;
+    margin-top: 70px;
+}
 .ui-wrapper{
     display: flex;
     margin: auto;
-    border-color: rgba(5, 5, 5, 0.932);
-    border-width: 10px;
-    /* flex-wrap:wrap; */
-    background-color: rgba(214, 199, 186, 0.979);
-    /* flex-wrap will force additional cells to a new line after any squares on the first row exceed 450px */
-    width: 330px;
-    /* the width of the gameboard */
+    background-color: rgba(5, 5, 5, 0.932);
+    width: 328px;
     justify-content: center;
 }
 
