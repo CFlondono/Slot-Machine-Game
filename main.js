@@ -1,5 +1,5 @@
 console.log("js")
-let arraySymbol = ["🍋", "🔔","🍒","🍊"]
+let arraySymbol = ["🍋", "🔔","🍉","🍒",]
 let squaresId = ["square1","square2","square3"]
 let symbolStatus = []
 //three squares lined up together with a symbol on each one
@@ -7,7 +7,7 @@ document.getElementById('square1').innerHTML = arraySymbol[0];
 document.getElementById('square2').innerHTML = arraySymbol[1];
 document.getElementById('square3').innerHTML = arraySymbol[2];
 //runSlots(arraySymbol,squaresId)
-document.getElementById('start').addEventListener('click',starTimer);
+document.getElementById('start').addEventListener('click',reelRotation);
 //runSlots(arraySymbol,squaresId)
 // const symbol = selectSymbol(arraySymbol)
 // console.log(symbol)
@@ -49,11 +49,8 @@ function runSlots(){
         message.innerHTML = "You won!!"
     }else message.innerHTML = "Try again!!"
 }
-
 //An anounce that I have won if the the three symbols showing on the squares are the same
-
-
-function starTimer(){
+function reelRotation(){
     let count = 0
     let animationStart = setInterval(()=>{
         count ++
@@ -65,4 +62,10 @@ function starTimer(){
         }    
     },100)    
 }
-starTimer()
+function winner(){
+    const message = document.getElementById("game-messages")
+    if (symbolStatus[0] === symbolStatus[1] && symbolStatus[1] === symbolStatus[2]){
+        message.innerHTML = "You won!!"
+    }else message.innerHTML = "Try again!!"
+}
+

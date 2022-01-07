@@ -2,10 +2,22 @@
     box-sizing: border-box;
     /* Box-sizing: https://www.w3schools.com/css/css3_box-sizing.asp */
 }
-/* Your Styling Here */
+body{
+    background-image: url('https://i.postimg.cc/K814q0V6/slot-machine-159972-640.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
 h1{
+    font-family:sans-serif;
     text-align: center;
 }
+#container{
+    background-color: whitesmoke;
+    width: fit-content;
+    margin: auto;
+}
+
 #gameboard,.ui-wrapper{
     display: flex;
     margin: auto;
@@ -24,6 +36,7 @@ h1{
     height: 125px;
     margin: 5px;
     border: 5px solid rgb(89, 86, 97);
+    background-color: white;
 }
 .ui-wrapper button {
     margin: 10px 5px;
