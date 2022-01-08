@@ -20,7 +20,11 @@ h2{
     text-align: center;
     color:seashell;
 }
-
+#lever{
+    display: flex;
+    margin-top: 188px;
+    margin-left: 893px;
+}
 #gameboard{
     display: flex;
     margin: auto;
@@ -29,7 +33,7 @@ h2{
     width: 243px;
     /* the width of the gameboard (best size to put it inside the slot machine)*/
     justify-content: center;
-    margin-top: 280px;
+    margin-top:45px;
 }
 #container{
     background-color:rgb(46, 28, 12);

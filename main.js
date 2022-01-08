@@ -8,6 +8,7 @@ document.getElementById('square2').innerHTML = arraySymbol[1];
 document.getElementById('square3').innerHTML = arraySymbol[2];
 //runSlots(arraySymbol,squaresId)
 document.getElementById('start').addEventListener('click',reelRotation);
+document.getElementById('lever').addEventListener('click',reelRotation);
 //runSlots(arraySymbol,squaresId)
 // const symbol = selectSymbol(arraySymbol)
 // console.log(symbol)
@@ -62,10 +63,10 @@ function reelRotation(){
         }    
     },100)    
 }
-function winner(){
-    const message = document.getElementById("game-messages")
-    if (symbolStatus[0] === symbolStatus[1] && symbolStatus[1] === symbolStatus[2]){
-        message.innerHTML = "You won!!"
-    }else message.innerHTML = "Try again!!"
-}
+// function winner(){
+//     const message = document.getElementById("game-messages")
+//     if (symbolStatus[0] === symbolStatus[1] && symbolStatus[1] === symbolStatus[2]){
+//         message.innerHTML = "You won!!"
+//     }else message.innerHTML = "Try again!!"
+// }
 
