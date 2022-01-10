@@ -1,17 +1,11 @@
-# Slot MAchine
-A slot machine's standard layout features a screen displaying three or more reels that "spin" when the game is activated. 
-Some modern slot machines still include a lever as a skeuomorphic design trait to trigger play.
-However, the mechanics of early machines have been superseded by random number generators, and most are now operated using buttons and touchscreens.
+# Slot Machine
+The slot machine's standard layout features a screen displaying three reels that "spin" when the game is activated. 
+The sping is activated by pressing the "push button" or the lever. Slot machines operate randomly. 
 
-Slot machines operate randomly. 
-Tha machine has a Random Number Generator (RNG) inside each one, which cycles through millions of numbers continuously. 
-The outcome of a spin is automatically determined by the RNG at the time you hit the spin button, making it impossible to predict whether you'll win or lose.
-
-Slots usually have three reels but sometimes also have five reels. 
-The reel is the image that spins in the front of the machine. 
+Slots usually have three reels but sometimes also have five reels. The reel is the image that spins in the front of the machine. 
 It has multiple symbols on it, and if you line up certain combinations of symbols, you win.
 
-# The Symbols
+## The Symbols
 The very first, primitive slots used card symbols – hearts, clubs, diamonds, and spades. 
 Then Charles Fey, a native of San Francisco, who invented the machine, introduced horseshoes and the Liberty Bell. 
 Horseshoes were a sign of good luck, while the bell represents American freedom. 
@@ -22,7 +16,7 @@ Now you can see where the famous fruit symbols that are still so popular today s
 Cherries, lemons, melons, pears, and oranges are still very common in casino slots. 
 And he bar emerged from the idea that it looked like a bar of gum! (taken from : The TwinSpires Edge:The ultimate guide to slot machine symbols and icons)
 
-# user stories
+## user stories
 - MVP
 As a user I would like to see
 * three squares lined up together with a symbol on each one
@@ -37,3 +31,28 @@ As a user I would like to see
 * As a user I would like to see three symbols chosen at random when I press the stop button.
 
 ![wireframe](Wireframe_Slot_Machine.png)
+
+## screenshot og the game
+![screenshot](/images/ScreenShot_Slot_Machine.png)
+![screenshot](/images/ScreenShot_Slot_Machine.png)
+![screenahor](/images/ScreenShot_Slot_Machine_Browser
+
+## Getting Started
+
+* Go to the link: https://cflondono.github.io/Slot-Machine-Game/ 
+* Press the "Push Buton" to activate the "spin" of the reels.  Another way to activate the spin is clicking on the lever (the pool-ball number 8.)
+* The system will generate a combination at random.
+* If you get three equal symbols displayed on the three squares, you win!!
+* If you don't get the combination of the three equal symbols, you loss. But you have the oportunity to play again.
+
+## Built with
+
+* HTML
+* CSS
+* JavaScript
+
+## Next Steps
+
+* Create a point system in which the player can earn points depending on what pictures the reels show on the squares.
+* Allow the player acumulate points for each time he/she plays 
+* Create a start button and an stop butta

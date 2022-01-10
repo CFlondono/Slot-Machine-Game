@@ -63,10 +63,3 @@ function reelRotation(){
         }    
     },100)    
 }
-// function winner(){
-//     const message = document.getElementById("game-messages")
-//     if (symbolStatus[0] === symbolStatus[1] && symbolStatus[1] === symbolStatus[2]){
-//         message.innerHTML = "You won!!"
-//     }else message.innerHTML = "Try again!!"
-// }
-
