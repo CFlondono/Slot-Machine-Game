@@ -1,6 +1,6 @@
 # Slot Machine
 The slot machine's standard layout features a screen displaying three reels that "spin" when the game is activated. 
-The sping is activated by pressing the "push button" or the lever. Slot machines operate randomly. 
+The spin is activated by pressing the "push button" or the lever. Slot machines operate randomly. 
 
 Slots usually have three reels but sometimes also have five reels. The reel is the image that spins in the front of the machine. 
 It has multiple symbols on it, and if you line up certain combinations of symbols, you win.
