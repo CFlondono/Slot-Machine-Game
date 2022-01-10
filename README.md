@@ -32,7 +32,7 @@ As a user I would like to see
 
 ![wireframe](Wireframe_Slot_Machine.png)
 
-## screenshot og the game
+## screenshots
 ![screenshot](/images/ScreenShot_Slot_Machine.png)
 ![screenshot](/images/ScreenShot_Slot_Machine.png)
 ![screenahor](/images/ScreenShot_Slot_Machine_Browser
@@ -55,4 +55,4 @@ As a user I would like to see
 
 * Create a point system in which the player can earn points depending on what pictures the reels show on the squares.
 * Allow the player acumulate points for each time he/she plays 
-* Create a start button and an stop butta
+* Create a start button and an stop button
